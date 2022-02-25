@@ -1,0 +1,25 @@
+body{
+    background: linear-gradient(90deg,blue,black,blue);
+}
+
+#inst{
+    animation: backgroundScale 5s ease-in-out infinite;
+}
+
+canvas{
+    border-radius: 20px;
+    transform: translateY(-50px);
+    animation: canvasA 5s ease-in-out infinite;
+}
+
+@keyframes canvasA {
+    0%{box-shadow: 1px 1px 38px black;}
+    50%{box-shadow: 1px 1px 38px white;}
+    100%{box-shadow: 1px 1px 38px black;}
+}
+
+@keyframes backgroundScale {
+    0%{background-color: red;}
+    50%{background-color: green; transform: scale(1.1);}
+    100%{background-color: red;}
+}
